@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northwind</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: 'Fjalla One', sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        .navbar {
+            background-color: #004085;
+        }
+
+        .navbar .navbar-brand,
+        .navbar .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+
+        .navbar .navbar-nav .nav-item i {
+            margin-right: 8px;
+        }
+
+        .navbar .navbar-nav .nav-link:hover,
+        .navbar .navbar-nav .nav-item:hover {
+            background-color: #003366;
+        }
+
+        .dropdown-menu {
+            border-radius: 0.5rem;
+        }
+
+        .container-fluid.custom-container {
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            border: 1px solid #dcdcdc;
+        }
+
+        .custom-container h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        .custom-container p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #333333;
+        }
+
+        .btn {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .search-bar {
+            width: 300px;
+            margin-right: 15px;
+        }
+
+        .navbar-collapse {
+            justify-content: flex-start;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="bi bi-compass"></i> Northwind</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <!-- Search Form -->
+                <form class="d-flex search-bar" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">
+                        <i class="bi bi-search"></i>
+                        <span class="visually-hidden">Search</span>
+                    </button>
+                </form>
+                <ul class="navbar-nav me-auto my-2 my-lg-0">
+                    <!-- Products Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-box"></i> Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-grid"></i> Browse Categories</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-search"></i> Product Search</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-tags"></i> Current Discounts</a></li>
+                        </ul>
+                    </li>
+                    <!-- Customers Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-person"></i> Customers
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person-plus"></i> Register</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-in-right"></i> Sign In</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Custom Container -->
+    <div class="container-fluid custom-container">
+        <h1>Welcome to Northwind Traders</h1>
+        <p>
+            Explore our extensive catalog of products, manage your customer account, and discover exclusive discounts.
+            Use the navigation bar above to browse categories, search for products, and sign in or register as a
+            customer.
+        </p>
+    </div>
+
+    <!-- Bootstrap JS (for dropdown functionality) -->
+    <!-- Bootstrap 5.3.3 JS bundle with Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
